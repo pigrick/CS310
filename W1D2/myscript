@@ -1,0 +1,6 @@
+#! /bin/bash
+
+mkdir testscript
+cd testscript
+touch script1
+touch script2

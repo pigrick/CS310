@@ -1,19 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 float conversion(float tempe){	
 	return (((tempe * 9) / 5) + 32);
 }
 
-int main(int argc, float celsius[]){
+int main(int argc, char *celsius[]){
 	int i;
+	float g;
+
 	for(i = 1; i < argc; i++){
-	
+		g = atof(celsius[i]);
 		printf("Farenheit is :");
-		printf("%.2f\n", conversion(celsius[i]));
+		printf("%.2f\n", conversion(g));
 		
 	}
-	float c;
-	printf("Type in celsius to convert to farenheit: ");
-	scanf("%f", &c);
-	printf("%f\n", conversion(c));
+	
 }

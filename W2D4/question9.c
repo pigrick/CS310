@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 #define SSIZE 20
 
@@ -17,18 +18,17 @@ void display_employee(Employee e){
 			e.name, e.addr, e.SSN, e.age, e.gender, e.department, e.salary);
 }
 int change_addr(Employee * e, const char *naddr){
-	
-	e->addr = &naddr;
+	strcpy(e->addr, naddr);
 	return 0;
 }
 
 int revise_salary(Employee* e, float nsalary){
-	e->salary = &nsalary;
+	e->salary = nsalary;
 	return 0;
 }
 
 int mod_deptmt(Employee * e, const char* ndeptmt){
-	e->department = &ndeptmt;
+	strcpy(e->department, ndeptmt);
 	return 0;
 }
 

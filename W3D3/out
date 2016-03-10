@@ -1,0 +1,11 @@
+menu.c: In function ‘setup_menu’:
+menu.c:60:9: warning: incompatible implicit declaration of built-in function ‘strlen’ [enabled by default]
+  tlen = strlen(title);
+         ^
+menu.c: In function ‘labeling’:
+menu.c:90:2: warning: embedded ‘\0’ in format [-Wformat-contains-nul]
+  sprintf(label, "(%d)\0", no);
+  ^
+/tmp/cccmeBGV.o: In function `setup_menu':
+menu.c:(.text+0x44): undefined reference to `max_length'
+collect2: error: ld returned 1 exit status

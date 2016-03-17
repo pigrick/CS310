@@ -1,0 +1,13 @@
+Makefile
+shell
+shell.c
+shell.o
+test.txt
+text.txt
+total 48
+-rw-rw-r-- 1 student student   108 Mar 15 10:05 Makefile
+-rwxrwxr-x 1 student student 15868 Mar 17 13:36 shell
+-rw-rw-r-- 1 student student  4603 Mar 17 13:35 shell.c
+-rw-rw-r-- 1 student student 10164 Mar 17 13:36 shell.o
+--w----r-T 1 student student    49 Mar 16 14:44 test.txt
+-rw-rw-r-- 1 student student    49 Mar 17 13:37 text.txt
